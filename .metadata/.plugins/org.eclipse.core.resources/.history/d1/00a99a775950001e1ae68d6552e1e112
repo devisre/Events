@@ -1,0 +1,5 @@
+package samp;
+
+public interface interfaceA {
+
+}

@@ -1,0 +1,109 @@
+package test;
+
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.Scanner;
+
+public class taskstudentsdetails {
+
+	public static void main(String[] args) throws SQLException {
+		Connection obj=DriverManager.getConnection("jdbc:mysql://localhost/colleagedb","root","sreepriya1357");
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Select your Option");
+		System.out.println("1.Insert Students details");
+		System.out.println("2.Edit students details");
+		System.out.println("3.Delete students details ");
+		System.out.println("4.Show students details");
+		PreparedStatement stm=obj.prepareStatement("delete from Students where id=?");
+		int a=sc.nextInt();
+		 
+		if(a==1) {
+			PreparedStatement st=obj.prepareStatement("insert into Students values(?,?,?,?,?,?)");
+			System.out.println("1.Insert Students details");
+            System.out.println("Enter id:");
+            int b=sc.nextInt();
+            st.setInt(1,b);
+            System.out.println("Enter name:");
+            String ab=sc.nextLine();
+            st.setString(2,ab);
+            System.out.println("Enter class:");
+            int c=sc.nextInt();
+            st.setInt(3,c);
+            System.out.println("Enter rollno:");
+            int cd=sc.nextInt();
+            st.setInt(4,cd);
+            System.out.println("Enter phone number:");
+            int d=sc.nextInt();
+            st.setInt(5,c);
+            System.out.println("Enter mailid:");
+            String de=sc.nextLine();
+            st.setString(6,de);
+            st.executeUpdate();
+        }
+		
+		else if (a==2) {
+			PreparedStatement st=obj.prepareStatement("update Students set name=? where empid=?");
+			PreparedStatement St=obj.prepareStatement("update Students set name=? where empid=?");
+			PreparedStatement stm=obj.prepareStatement("update Students set name=? where empid=?");
+			PreparedStatement Stm=obj.prepareStatement("update Students set name=? where empid=?");
+			PreparedStatement stmt=obj.prepareStatement("update Students set name=? where empid=?");
+			PreparedStatement Stmt=obj.prepareStatement("update Students set name=? where empid=?");
+			System.out.println("2.Edit students details");
+			System.out.println("Enter id:");
+            int b=sc.nextInt();
+            st.setInt(1,b);
+            System.out.println("Enter name:");
+            String ab=sc.nextLine();
+            St.setString(2,ab);
+            System.out.println("Enter class:");
+            int bc=sc.nextInt();
+            stm.setInt(3,bc);
+            System.out.println("Enter rollno:");
+            int f=sc.nextInt();
+            Stm.setInt(4,f);
+            System.out.println("Enter phone number:");
+            int c=sc.nextInt();
+            stmt.setInt(5,c);
+            System.out.println("Enter mailid:");
+            String de=sc.nextLine();
+            Stmt.setString(6,de);
+            st.executeUpdate();
+            St.executeUpdate();
+            stm.executeUpdate();
+            Stm.executeUpdate();
+            stmt.executeUpdate();
+            Stmt.executeUpdate();
+		}
+		
+		else if(a==3) {
+			PreparedStatement ps =obj.prepareStatement("delete from Students where id=?");
+			System.out.println("3.Delete students details ");
+			int e=sc.nextInt();
+			stm.setInt(1,e);
+			stm.executeUpdate();
+			
+		}
+		
+		else if (a==4) {
+			PreparedStatement Ps=obj.prepareStatement("select * from Students where id=?");
+			System.out.println("4.Show students details");
+			int g=sc.nextInt();
+			stm.setInt(1, g);
+			stm.executeUpdate();
+		}
+		
+		else if (a==5) {
+			PreparedStatement tm=obj.prepareStatement("select * from Students");
+			System.out.println("4.Show students details");
+			tm.executeUpdate();
+			
+		
+		
+		}
+
+	}
+
+

@@ -1,0 +1,65 @@
+#hed{
+    position: fixed;
+    text-indent: 2cm;
+    color: rgb(19, 19, 32);
+    text-align:left;
+    font-weight:1000;
+    font-size:larger ;
+    width: 1500px;
+    background-color: rgb(180, 165, 176);
+}
+
+h2{
+    text-align: center;
+    font-weight: 300;
+    font-display: initial;
+}
+
+#call{
+    position: absolute;
+    margin-top: 5cm;
+    margin-left:1000px;
+    width: 350px;
+    height:350px;
+}
+
+#submit{
+    margin-top: 0cm; 
+    margin-left: 2cm;
+   
+}
+
+#sign{
+    width: 100px;
+    height: 50px;
+}
+
+#Pass{
+    margin-top: 6cm;
+    margin-left: 3cm;
+    
+}
+
+#image{
+    margin-top: 3cm;
+    width: 200px;
+    height: 200px;
+}
+
+#facili{
+    position: absolute;
+    margin-top: 15cm;
+    margin-left: 25cm;
+    letter-spacing:5px;
+    text-transform: uppercase;
+    border: 20px outset;
+    width: 450px;
+    border-color: black;
+}
+
+h4{
+    border:5px;
+    width: 300px;
+    
+
+}

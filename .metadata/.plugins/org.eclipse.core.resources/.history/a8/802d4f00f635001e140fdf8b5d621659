@@ -1,0 +1,23 @@
+package operator;
+
+import java.util.Scanner;
+
+public class while_ex3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number");
+		int a=sc.nextInt();
+		while (a<=10) {
+		if (1*a==a) {
+			System.out.println(a);
+		}
+		else {System.out.println(1*a==a);}
+			a++;
+		}
+		
+
+	}
+
+}

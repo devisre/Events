@@ -1,0 +1,10 @@
+package samp;
+
+public class multi2 extends multilevelinheritance1 {
+	void father() {
+		System.out.println("he is young man");
+	}
+
+	
+	}
+

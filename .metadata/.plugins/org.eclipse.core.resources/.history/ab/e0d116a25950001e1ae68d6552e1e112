@@ -1,0 +1,14 @@
+package samp;
+
+public class interfaceC implements interfaceA,interfaceB {
+	void string() {
+		System.out.println("This is hybrid inheritance ");
+	}
+	public void sum() {
+		System.out.println("Sum of these numbers="+ (3+2));
+	}
+	public void sub() {
+		System.out.println("Difference of these numbers="+ (3+2));
+	}
+
+}

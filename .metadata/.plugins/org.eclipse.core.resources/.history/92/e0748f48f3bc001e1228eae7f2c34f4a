@@ -1,0 +1,24 @@
+package collection;
+
+public class ahjdsghb {
+
+	
+            ahjdsghb(int a, int b)  
+            {  
+                System.out.println("a = "+a+" b = "+b);  
+            }  
+            ahjdsghb(int a, float b)  
+            {  
+                System.out.println("a = "+a+" b = "+b);  
+            }  
+            public static void main (String args[])  
+            {  
+                byte a = 10;   
+                byte b = 15;  
+                ahjdsghb test = new ahjdsghb(a,b);  
+            }  
+          
+
+	}
+
+}

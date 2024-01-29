@@ -1,0 +1,6 @@
+package samp;
+
+public interface interface2 {
+	void sub();
+
+}

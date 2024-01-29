@@ -1,0 +1,13 @@
+package samp;
+
+public class classA {
+	void A()
+	{System.out.println("A classes");}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ classA ob=new classA();
+ ob.A();
+	}
+
+}

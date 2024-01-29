@@ -1,0 +1,16 @@
+package samp;
+
+public class interfaceD extends interfaceC implements interfaceA,interfaceB{
+	void multiple() {
+		System.out.println("Products of these numbers="+(4*8));
+	}
+
+	public static void main(String[] args) {
+		interfaceD ob=new interfaceD();
+		ob.multiple();
+		ob.string();
+		ob.sub();
+		ob.sum();
+	}
+
+}

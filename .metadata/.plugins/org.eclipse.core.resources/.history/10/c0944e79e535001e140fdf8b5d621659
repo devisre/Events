@@ -1,0 +1,29 @@
+package operator;
+
+import java.util.Scanner;
+
+public class switch_ex1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+	  System.out.println("Date");
+	  int Date=sc.nextInt();
+	  System.out.println("Month");
+	  int Month=sc.nextInt();
+	  System.out.println("Year");
+	  int Year=sc.nextInt();
+	  System.out.println("Date="+Date);
+	  System.out.println("Month="+Month);
+	  System.out.println("Year="+Year);
+	  
+	  String number="Month";
+	  switch(number) {
+	  case "Month"->System.out.println("May");
+	  }
+	  
+    System.out.print("Your Birthday on:27 April 1997");
+   
+}
+
+}

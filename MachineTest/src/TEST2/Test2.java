@@ -1,0 +1,63 @@
+package TEST2;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class Test2 extends JFrame implements ActionListener {
+	JLabel l1,l2,l3,l4,l5;
+	JTextField jt1,jt2;
+	JButton b1;
+	
+	Test2(){
+		l1=new JLabel("CONVERTER");
+		l1.setBounds(150, 20, 100, 30);
+		l2=new JLabel("Rupees");
+		l2.setBounds(20, 70, 100, 30);
+		l3=new JLabel("Dollars");
+		l3.setBounds(200, 70, 100, 30);
+		l4=new JLabel("INR");
+		l4.setBounds(70, 110, 100, 30);
+		l5=new JLabel("DOLLAR");
+		l5.setBounds(220, 110, 100, 30);
+		add(l1);add(l2);add(l3);add(l4);add(l5);
+		
+		 jt1=new JTextField();
+		jt1.setBounds(75, 70, 100, 30);
+		 jt2=new JTextField();
+		jt2.setBounds(250, 70, 100, 30);
+		add(jt1);
+		add(jt2);
+		
+	    JButton b1=new JButton("CLOSE");
+		b1.setBounds(140, 160, 100, 30);
+		add(b1);
+		
+		b1.addActionListener(this);
+		
+		setSize(400,400);
+		setLayout(null);
+		setVisible(true);
+	}
+	
+	
+	public void actionPerformed(ActionEvent e ){
+		
+		int a=Integer.parseInt(jt2.getText());
+		
+		e.getActionCommand().equals("CLOSE"); 
+	    int b=a*75;
+		jt1.setText(String.valueOf(b));
+		//int c=Integer.parseInt(jt1.getText());
+	}
+		  
+	public static void main(String[] args) {
+		
+		Test2 t2 = new Test2();
+
+	}
+}

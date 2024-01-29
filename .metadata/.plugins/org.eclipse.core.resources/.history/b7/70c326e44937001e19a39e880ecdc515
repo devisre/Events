@@ -1,0 +1,16 @@
+package operator;
+
+import java.util.Scanner;
+
+public class forloopfactorial {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc=new Scanner(System.in);
+int a=sc.nextInt();
+for ( int b=(a*(a-1));b>=a;) {
+	System.out.println(b);
+}
+System.out.println();	}
+
+}

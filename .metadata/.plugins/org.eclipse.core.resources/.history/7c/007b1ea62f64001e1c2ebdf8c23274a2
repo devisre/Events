@@ -1,0 +1,26 @@
+package collection;
+
+import java.util.ArrayList;
+
+public class arraylist {
+
+	public static void main(String[] args) {
+		ArrayList<String> co=new ArrayList<> ();
+        System.out.println(co.isEmpty());
+		co.add("java");
+		co.add("hello");
+		co.add("eclipse");
+		co.add("arraylist");
+		System.out.println(co);
+		System.out.println(co.get(1));
+		co.set(3,"array");
+		co.remove(2);
+		co.remove("hello");
+        System.out.println(co);
+        System.out.println(co.isEmpty());
+
+		}
+		
+	}
+
+

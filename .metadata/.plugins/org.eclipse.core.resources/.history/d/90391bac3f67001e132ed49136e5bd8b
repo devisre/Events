@@ -1,0 +1,34 @@
+package collection;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+
+public class Hashmapfilm {
+
+	public static void main(String[] args) {
+		HashMap <Integer,Bahubali>hmap1=new HashMap<>();
+		HashMap <Integer,RRR>hmap2=new HashMap<>();
+		HashMap <Integer,dheera>hmap3=new HashMap<>();
+		
+		
+		Bahubali hs1=new Bahubali("Bahubali", "rajamouli", "prabhas", "anushka");
+		RRR hs2=new RRR("RRR", "rajamouli", "ramcharan", "aliya");
+		dheera hs3=new dheera ("dheera", "rajamouli", "ramcharan", "kajal");
+		hmap1.put(1,hs1);
+		hmap2.put(2,hs2);
+		hmap3.put(3,hs3);
+		
+		
+		for(Map.Entry m: hmap1.entrySet()) {
+			System.out.println(m.getKey()+","+m.getValue());}
+		
+	    for(Map.Entry m : hmap2.entrySet()) {
+		System.out.println(m.getKey()+","+m.getValue());}
+		
+	    for(Map.Entry m: hmap3.entrySet()) {
+		System.out.println(m.getKey()+","+m.getValue());}
+
+	}
+
+}

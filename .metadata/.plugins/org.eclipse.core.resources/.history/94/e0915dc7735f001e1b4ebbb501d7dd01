@@ -1,0 +1,10 @@
+package test;
+
+public class test1_2 {
+
+	public static void main(String[] args) {
+		test1_1 obj=new test1_1();
+		obj.calculatesum(7, 8);
+	}
+
+}
