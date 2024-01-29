@@ -1,0 +1,60 @@
+package Swing;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class Showall extends JFrame implements ActionListener{
+	JLabel l1;
+	Showall(){
+		JFrame jf=new JFrame("Show all Students Details");
+		
+		 l1=new JLabel("Show all Students Details");
+		 l1.setBounds(120, 30, 200,30);
+		 jf.add(l1);
+		 
+		 JButton Jb= new JButton("Show all details");
+		 Jb.setBounds(80, 100, 200, 30);
+		 jf.add(Jb);
+		 
+		 Jb.addActionListener(this);
+		 jf.setSize(400,400);
+		 jf.setLayout(null);
+		 jf.setVisible(true); 
+		 
+	}
+	
+	void showalmethod() throws SQLException   {
+		Connection obj=DriverManager.getConnection("jdbc:mysql://localhost/employeedb","root","sreepriya1357");
+		PreparedStatement st=obj.prepareStatement("select * from Students");
+		
+		ResultSet rs=st.executeQuery("select * from Students");
+		
+		System.out.println("Show all students details");
+		while(rs.next()) {
+		System.out.println(rs.getInt(1)+","+rs.getString(2)+","+rs.getInt(3)+","+rs.getInt(4)+","+rs.getInt(5)+","+rs.getString(6));}
+		
+	}
+	
+	public void actionPerformed(ActionEvent e ) {
+		 Showall shl=new Showall();
+		 try {
+			shl.showalmethod();
+		} catch (SQLException e1) {
+			e1.printStackTrace();
+		}
+	}
+	 
+}
+	
+
+

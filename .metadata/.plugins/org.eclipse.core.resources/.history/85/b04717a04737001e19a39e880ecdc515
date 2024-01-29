@@ -1,0 +1,24 @@
+package operator;
+
+public class nestedfor1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		for (int i=2;i<6;i++) {
+			for(int a=2;a<3;a++)	{
+				//for(int b=1;b<2;b++) {
+					//for (int c=1;c<2;c++) {
+						//System.out.println("*");
+					
+					//System.out.println("*");
+				
+			
+			System.out.print("*");
+			
+			{System.out.println(a);}}}
+		
+		}}
+		//}
+//}
+
+

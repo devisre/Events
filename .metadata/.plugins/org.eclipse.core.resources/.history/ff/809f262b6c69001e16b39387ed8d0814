@@ -1,0 +1,43 @@
+package collection;
+
+public class Film {
+	String Film;
+	String director;
+	String Actor;
+	String Actress;
+	
+	 public Film() {
+		
+		// TODO Auto-generated constructor stub
+	}
+	Film(String Film,String director ,String Actor,String Actress){
+		this.Actor=Actor;
+		this.Actress=Actress;
+		this.director=director;
+		this.Film=Film;
+	}
+	public String getActor() {
+		return Actor;
+	}
+	public void setActor(String actor) {
+		Actor = actor;
+	}
+	public String getActress() {
+		return Actor;
+	}
+	public void setActress(String actress) {
+		Actor = actress;
+	}
+	public String getdirector() {
+		return Actor;
+	}
+	public void setdirector(String director) {
+		Actor = director;
+	}
+	public String getFilm() {
+		return Actor;
+	}
+	public void setFilm(String film) {
+		Actor = director;
+	}
+}

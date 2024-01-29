@@ -1,0 +1,123 @@
+package Swing;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class Update  extends JFrame implements ActionListener{
+	JLabel l1,l2,l3,l4,l5,l6,l7;
+	JTextField jt1,jt2,jt3,jt4,jt5,jt6;
+	Update(){
+		JFrame jf=new JFrame("Edit Students Details");
+		
+		 l1=new JLabel("Update Students Details");
+		 l1.setBounds(120,20, 200,30);
+		 l2=new JLabel("Enter id:");
+		 l2.setBounds(40,70, 150,30);
+		 l3=new JLabel("Enter name:");
+		 l3.setBounds(40,100, 150,30);
+		 l4=new JLabel("Enter class:");
+		 l4.setBounds(40,130, 150,30);
+		 l5=new JLabel("Enter rollno:");
+		 l5.setBounds(40,160, 150,30);
+		 l6=new JLabel("Enter phone number:");
+		 l6.setBounds(40,190, 150,30);
+		 l7=new JLabel("Enter mailid:");
+		 l7.setBounds(40,220, 150,30);
+		 
+		 jf.add(l1);jf.add(l2);jf.add(l3);jf.add(l4);jf.add(l5);jf.add(l6);jf.add(l7);
+		 
+		 JTextField jt1= new JTextField();
+		 jt1.setBounds(170, 70, 150, 30);
+		 JTextField jt2= new JTextField();
+		 jt2.setBounds(170, 100, 150, 30);
+		 JTextField jt3= new JTextField();
+		 jt3.setBounds(170, 130, 150, 30);
+		 JTextField jt4= new JTextField();
+		 jt4.setBounds(170, 160, 150, 30);
+		 JTextField jt5= new JTextField();
+		 jt5.setBounds(170, 190, 150, 30);
+		 JTextField jt6= new JTextField();
+		 jt6.setBounds(170, 220, 150, 30);
+		 
+		 jf.add(jt1);jf.add(jt2);jf.add(jt3);jf.add(jt4);jf.add(jt5);jf.add(jt6);
+		 
+		 JButton Jb= new JButton("Submit");
+		 Jb.setBounds(130, 280, 100, 30);
+		 jf.add(Jb);
+		 
+		 Jb.addActionListener(this);
+		 jf.setSize(400,400);
+		 jf.setLayout(null);
+		 jf.setVisible(true); 
+		 
+	}
+	void updatemethod()throws SQLException {
+		Connection obj=DriverManager.getConnection("jdbc:mysql://localhost/colleagedb","root","sreepriya1357");
+		
+		
+		int id=Integer.parseInt(jt1.getText());
+		jt1.setText(String.valueOf(id));
+		String name=jt2.getText();
+		jt2.setText(String.valueOf(name));
+		int clas=Integer.parseInt(jt3.getText());
+		jt3.setText(String.valueOf(clas));
+		int rolno=Integer.parseInt(jt4.getText());
+		jt4.setText(String.valueOf(rolno));
+		int ph=Integer.parseInt(jt5.getText());
+		jt5.setText(String.valueOf(ph));
+		String mail=jt6.getText();
+		jt6.setText(String.valueOf(mail));
+		
+		PreparedStatement st1=obj.prepareStatement("update Students set id=? where name=?");
+		st1.setInt(1,id);
+   		st1.setString(2,name);
+   		
+   		PreparedStatement st2=obj.prepareStatement("update Students set name=? where id=?");
+		st2.setString(1,name);
+		st2.setInt(2,id);
+		
+		PreparedStatement st3=obj.prepareStatement("update Students set class=? where id=?");
+		st3.setInt(1,clas);
+		st3.setInt(2,id);
+		
+		PreparedStatement st4=obj.prepareStatement("update Students set rollno=? where id=?");
+		st4.setInt(1,rolno);
+		st4.setInt(2,id);
+		
+		PreparedStatement st5=obj.prepareStatement("update Students set phno=? where id=?");
+	    st5.setInt(1,ph);
+	    st5.setInt(2,id);
+	    
+		PreparedStatement st6=obj.prepareStatement("update Students set mailid=? where id=?");
+	    st6.setString(1,mail);
+	    st6.setInt(2,id);
+	    
+        st1.executeUpdate();
+        st2.executeUpdate();
+        st3.executeUpdate();
+        st4.executeUpdate();
+        st5.executeUpdate();
+        st6.executeUpdate();
+	}
+	
+	public void actionPerformed(ActionEvent e )  {
+		
+		 Update ud=new Update();
+		 try {
+			ud.updatemethod();
+		} catch (SQLException e1) {
+			e1.printStackTrace();
+		}
+		
+  }
+	 
+    }

@@ -1,0 +1,8 @@
+package samp;
+
+public class multi3 extends multi2{
+	void grandchild() {
+		System.out.println("he is baby");
+	}
+
+}

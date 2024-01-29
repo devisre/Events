@@ -1,0 +1,119 @@
+#imar{ margin-top: 3cm;
+    width: 1500px;
+    height: 650px; }
+
+#ima{ margin-top: 2cm;
+    width: 700px; 
+    height: 400px ; }
+
+#tabl{ width: 700px;
+    height: 200px; }
+
+#a{ letter-spacing: 1px;
+    font-weight: 50;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+
+#b{ letter-spacing: 1px;
+    color: rgb(238, 148, 110)  ;
+    font-size: larger;
+    font: weight 500px;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+
+#x{ text-align: left;
+    letter-spacing: 1px;
+    font-size: larger;
+    font: weight 500px;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+
+#tabls{ height: 50px; 
+    width: 400px; }
+  
+#c{ text-align: center;
+    font-size: larger;
+    text-transform: uppercase;
+    color: white  ; 
+    background-color:rgb(238, 148, 110)   ; }
+
+#d{ font-weight: 200;
+    text-indent: 1cm;
+    border: 1px solid;
+    font-size: larger;
+    border-color:  rgb(238, 148, 110)  ;
+    background-color: white; } 
+
+
+#tls{ margin-left: 3.5cm;}
+
+#f{ border-bottom: 1cm; }
+
+#g{ margin-bottom: 4cm;
+    position: static;
+    width: 450px;
+    height:165px ;
+    text-indent: 10cm;
+    background-color: white;}
+
+#x{ text-align: left;
+    font-size: larger;
+    font-style: normal; }
+
+#di{ position: static;
+    background-image:img1 ;}
+
+#k{ text-indent: 1px; }
+
+#di{ position:static;
+    background:url(img1.jpg);}
+
+h1{ text-transform: uppercase;
+    text-align: center;
+    font: size 150px;;
+    font-weight: 1000;}
+
+#te{ width: 200px;
+   height: 50px;
+   background-color:rgb(238, 148, 110) ;
+   text-transform: uppercase;
+   font-size: medium;
+   font-family: Georgia, 'Times New Roman', Times, serif;}
+
+#tb{ margin-left: 13cm;
+   margin-top: 2cm;}
+
+#divi{ position: absolute;
+    background-color: rgb(210, 205, 205);
+    margin-top: 2cm;
+    height: 350px;}
+
+#tables{margin-right: 4cm;
+    margin-left: 4cm;
+    margin-top: 1cm;
+    background-color: rgb(210, 205, 205);}
+
+#tle{ margin-left: 3cm;
+        width: 30%;
+        text-transform: uppercase;
+        font-size: 24px;
+        letter-spacing: 1px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+        
+#lin{width: 10%;
+        text-transform: uppercase;
+        font-size: 24px;
+        letter-spacing: 1px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+
+#con{width: 20%;
+        text-transform: uppercase;
+        font-size: 24px;
+        letter-spacing: 1px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+
+#map{ width: 50%;
+        text-transform: uppercase;
+        font-size: 24px;
+        letter-spacing: 1px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;} 
+    

@@ -1,0 +1,62 @@
+package Swing;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class Show extends JFrame implements ActionListener{
+	JLabel l1,l2;
+	JTextField jt1;
+	Show(){
+		
+		 l1=new JLabel("Show students details");
+		 l1.setBounds(120,20, 200,30);
+		 l2=new JLabel("Enter id:");
+		 l2.setBounds(70,70, 150,30);
+		 add(l1);add(l2);
+		 
+		 JTextField jt1= new JTextField();
+		 jt1.setBounds(170, 70, 150, 30);
+		 add(jt1);
+		 
+		 JButton Jb= new JButton("Submit");
+		 Jb.setBounds(130, 150, 100, 30);
+		 add(Jb);
+		 
+		 Jb.addActionListener(this);
+		 setSize(400,400);
+		 setLayout(null);
+		 setVisible(true);  }
+	
+	void showmethod() throws SQLException {
+	     Connection obj=DriverManager.getConnection("jdbc:mysql://localhost:3306/colleagedb","root","sreepriya1357"); 
+         
+        int id=Integer.parseInt(jt1.getText());
+        
+        PreparedStatement st=obj.prepareStatement("select * from Students where id=? ");
+        st.setInt(1,id);
+		ResultSet rs=st.executeQuery();
+	    while(rs.next()) {
+		System.out.println(rs.getInt(1)+","+rs.getString(2)+","+rs.getInt(3)+","+rs.getInt(4)+","+rs.getInt(5)+","+rs.getString(6));}
+	}
+		 
+	public void actionPerformed(ActionEvent e ) {
+		  
+		try {
+			showmethod();
+		} catch (SQLException e1) {
+			e1.printStackTrace();
+		}
+		System.out.println();
+		 
+	}
+	}

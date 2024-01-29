@@ -1,0 +1,15 @@
+package collection;
+
+public class Bahubali {
+	String Film;
+	String director;
+	String Actor;
+	String Actress;
+	 Bahubali(String Film,String director ,String Actor,String Actress){
+		this.Actor=Actor;
+		this.Actress=Actress;
+		this.director=director;
+		this.Film=Film;
+	}
+	
+}

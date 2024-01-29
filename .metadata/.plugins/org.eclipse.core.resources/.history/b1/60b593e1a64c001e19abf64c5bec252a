@@ -1,0 +1,17 @@
+package samp;
+
+public class multilevelinheritance_1 {
+	multilevelinheritance_1 (){
+		System.out.println("this is constructor");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ multi3 ob=new multi3();
+ 
+ ob.Grandfather();
+ ob.father();
+ ob.grandchild();
+	}
+
+}

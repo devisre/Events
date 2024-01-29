@@ -1,0 +1,8 @@
+package samp;
+
+public class multilevelinheritance1 {
+	void Grandfather() {
+		System.out.println("he is old");
+	}
+
+}

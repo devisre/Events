@@ -1,0 +1,36 @@
+package operator;
+
+public class Array_2Dsubstract {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+  int [][]a= {{6,8,5},{9,8,4}};
+  int [][]b= {{3,4,3},{2,5,2}};
+  int [][]d= new int [2][3];
+for(int i=0;i<a.length;i++) 
+	{for (int j=0;j<a[i].length;j++)
+	    {System.out.print(a[i][j]); }
+	{System.out.println();}
+	          }
+
+for (int m=0;m<b.length;m++)
+   {for(int n=0;n<b[m].length;n++) 
+        {System.out.print(b[m][n]);}
+             System.out.println();
+            }
+
+for (int x=0;x<2;x++) {
+	for(int y=0;y<3;y++) {
+		d[x][y]=a[x][y]-b[x][y] ;}
+}
+for(int i=0;i<d.length;i++) 
+{for (int j=0;j<d[i].length;j++)
+    {System.out.print(d[i][j]); }
+        System.out.println();
+        }
+
+}
+
+	}
+
+

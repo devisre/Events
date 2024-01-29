@@ -1,0 +1,21 @@
+package collection;
+
+public class Film {
+	String Film;
+	String director;
+	String Actor;
+	String Actress;
+	 Film(String Film,String director ,String Actor,String Actress){
+		this.Actor=Actor;
+		this.Actress=Actress;
+		this.director=director;
+		this.Film=Film;
+	}
+	public String getActor() {
+		return Actor;
+	}
+	public void setActor(String actor) {
+		Actor = actor;
+	}
+	
+}

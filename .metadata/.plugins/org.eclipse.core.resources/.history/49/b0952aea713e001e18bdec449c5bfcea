@@ -1,0 +1,21 @@
+package samp;
+
+public class Static_variable {
+	static int a=0;
+		
+	Static_variable (){
+		a++;
+		System.out.println(a);
+		}
+		
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Static_variable ob=new Static_variable();
+			//Counter2able c1=new Counter2();
+		//	Counter2 c2=new Counter2();
+		//	Counter2 c3=new Counter2();
+	}
+
+}
+  

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <title> Registration Form </title>   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+    <link rel="stylesheet" type="text/css" href="samp.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+<h1 style="color:rgb(0, 55, 255);text-align:center;">Registration Form  </h1> <br>
+
+<body>
+    <table cellpadding="5" border="0" cellspacing="5"> 
+    <tr>
+        <th> <form> Student Name  </form> </th>
+        <td> <form><input type="text" name="first_name" placeholder="first"/></form></td> 
+        <td> <form><input type="text" name="last_name" placeholder="last name" /></form></td>
+    </tr>
+
+    <tr>
+       <th> <form >Age </form> </th>
+       <td> <form><input type="text" name="Age" placeholder="Age"/></form> </td> 
+    </tr>
+
+    <tr>
+        <th> <form>Date Of Birth</form> </th>
+        <td> <form><input type="text" name="Date_Of_Birth" placeholder="DD/MM/YYYY" /></form> </td>  
+    </tr>
+    
+    <tr>
+        <th> <form>Gender </th>
+        <td> <form><input type="radio" name="Gender" value="Male">Male</form> </td>
+        <td> <form><input type="radio" name="Gender" value="Female">Female</form> </td>
+    </tr>
+    
+    <tr>
+        <th> <form>Phone Number</form> </th>  
+        <td> <form></form><input type="text" name="Phone_Number" /></form> </td> 
+    </tr>
+     
+    <tr> 
+        <th> <form>Home Address</form> </th>
+        <td> <textarea rows="5" cols="50" name="Home_Address" placeholder="Address" > </textarea>  </form> </td> 
+    </tr>
+    
+    <tr>
+        <th> <form>Email</form> </th>
+        <td> <form><input type="text" name="email" /></form> </td> 
+    </tr>
+    
+    <tr>
+        <th> <form> Please select the courses you would like to attend </th>
+        <td><form><input type="checkbox" name="BA" value="Of"> B.A
+            <select name="dropdown"> 
+                 <option value="Malayalam" >Malayalam</option> 
+                 <option value="Hindi">Hindi</option> 
+                 <option value="English">English</option> 
+                 <option value="History">History</option> 
+            </select></form></td>  
+              
+        <td><form><input type="checkbox" name="BSc" value="Of"> B.Sc 
+            <select name="dropdown"> 
+                 <option value="Chemistry" >Chemistry</option> 
+                 <option value="Maths">Maths</option> 
+                 <option value="Physics">Physics</option> 
+                 <option value="Zoology">Zoology</option> 
+            </select></form></td>    
+    
+        <td><form> <input type="checkbox" name="BCom" value="Of"> B.Com 
+            <select name="dropdown"> 
+                <option value="Finance" >Finance</option> 
+                <option value="Marketing">Marketing</option> 
+                <option value="Trading">Trading</option> 
+            </select></form></td>   
+    
+        <td><form><input type="checkbox" name="BBa" value="Of"> B.Ba </form></td>    
+        <td><form><input type="checkbox" name="BBa" value="Of"> B.pharm </form></td>   
+        <td><form><input type="checkbox" name="BBa" value="Of"> B.ed </form></td>   
+    </tr>
+    
+  <!--<input type="file" name="fileupload" accept=".txt*" />-->
+    
+</body>
+</html>

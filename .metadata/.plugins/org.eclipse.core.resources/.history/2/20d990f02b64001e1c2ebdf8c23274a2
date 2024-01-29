@@ -1,0 +1,18 @@
+package collection;
+
+import java.util.ArrayList;
+
+public class arraylist {
+
+	public static void main(String[] args) {
+		ArrayList co=new ArrayList ();
+		co.add("java");
+		co.add("hello");
+		co.add("eclipse");
+		System.out.println(co);
+		
+		}
+		
+	}
+
+}

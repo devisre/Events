@@ -1,0 +1,6 @@
+package collection;
+
+public class arraylist2 {
+
+	public static void main(String[] args) {
+	Iterator itr=new Iterator();
