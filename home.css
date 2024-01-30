@@ -1,0 +1,125 @@
+#imar{ margin-top: 3cm;
+    width: 1500px;
+    height: 650px; }
+
+#wi{ margin-left: 19cm;}
+#ima{ width: 50px;
+    height: 50px;
+    margin-left: 2.5cm;}
+#imag{
+    position: relative;
+    width: 700px;
+    height: 600px;
+}
+#chi{ position: absolute;
+    border-top: 1cm;}
+#x{ position:relative;
+    margin-top: 5cm;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(238, 148, 110)  ;}
+
+h2{ text-align:  center;
+    text-transform: uppercase;}
+#h22{ text-align: center;
+  text-transform: capitalize;}
+
+#pa{ text-align: center;
+     text-transform: capitalize;
+     font-family: 'Times New Roman', Times, serif;
+     font-size: larger;}
+
+#a{ color: rgb(238, 148, 110)  ;}
+
+#ta{ margin-left: 3cm;
+margin-top: 2cm;}
+
+#t{ position:static;
+    width: 230px;
+    height: 120px;
+    border:2px white dotted;
+    background-color: rgb(238, 148, 110)   ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    margin-left: 2cm;
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;}
+
+#b{ position:static;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(238, 148, 110)   ;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;}
+
+h3{ text-align: center;
+    text-transform: capitalize;}
+
+#tb{ width: 1200px;
+    height: 700;
+    margin-left: 3.5cm;
+    margin-top: 2cm;}
+
+#ide{ border:5px outset;
+    background-color: white;}
+#divi{ background:url(flo.jpg);
+margin-top: 1cm;}
+
+#hi{ border-top: 2cm;
+     margin-top: 2cm;}
+
+#y{ text-transform: capitalize;
+color: rgb(238, 148, 110)   ;
+font-size: 50px;}
+
+#z{ text-transform: capitalize;
+ font-size: larger;}
+
+#imi{ margin-left:1.4cm;}
+
+#man{  width: 600px;}
+
+#d{ text-align: center;
+    color:  rgb(238, 148, 110) ;
+    text-transform: capitalize;
+}
+#imgi{ margin-left: 0.6cm;
+      width: 350px;}
+
+
+#tl{ width: 700px;
+    height: 170px;}
+
+#te{ width: 100px;
+        height: 50px;
+        background-color:rgb(238, 148, 110) ;
+        text-transform: capitalize;
+        font-size: medium;
+        margin-left: 3.5cm;
+        font-family: Georgia, 'Times New Roman', Times, serif;}
+#tee{  margin-top: 1cm;
+      margin-left: 3cm;
+       width: 700px;}
+#pe{ text-align: center;
+     font-size: small;
+     text-transform: capitalize;}
+#td1{ margin-right:2cm ;
+      width: 300px; }
+#h11{ margin-top: 2cm;
+      text-align: center;
+      text-transform: capitalize;}
+#dp{ margin-top:2cm ;
+    margin-left: 6cm;
+     text-transform: capitalize;
+    text-align: center;}
+#dpo{ margin-left: 9cm;
+        text-transform: capitalize;
+       text-align: center;}
+#dpoe{ border: 5px inset ;}
+
+
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="checkCookies()">
+    <p id="demo"></p>
+    <script>
+    function checkCookies() {
+    var text = "";
+    if (navigator.cookieEnabled == true) {
+    text = "Cookies are enabled.";
+    } else {
+    text = "Cookies are not enabled.";
+    }
+    document.getElementById("demo").innerHTML = text;}
+    </script>
+
+   <div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+   style="background-color:aquamarine;
+          width:120px;height:20px;padding:40px;" >
+     Mouse Over Me</div>
+    <script>
+     function mOver(obj) {
+    obj.innerHTML = "Thank You"
+    }
+    function mOut(obj) {
+    obj.innerHTML = "Mouse Over Me"
+    }
+</script>
+
+    
+</body>
+</html>
