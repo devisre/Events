@@ -1,0 +1,152 @@
+
+
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 1250px;
+    min-height: 1500px;
+    margin: 50px;
+    background-color:rgba(165, 42, 42, 0.525);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+
+.heading
+{
+    color: blue;
+    position: absolute;
+    top: 10px;
+    left:20px;
+    font-size: 22px;
+}
+
+.head2
+{
+    color:black;
+    position: relative;
+    top:100px;
+    left:20px;
+    font-size: 20px;
+    font-style: italic;
+
+}
+
+.head3
+{
+    color: blue;
+    position: absolute;
+    top: 170px;
+    left:20px;
+    font-size: 25px;
+    font-style: oblique;
+}
+
+.list
+{
+    color: black;
+    position: absolute;
+    top: 240px;
+    left:20px;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+.head4
+{
+    color: blue;
+    position: absolute;
+    top: 120px;
+    left:20px;
+    font-size: 25px;
+    font-style: oblique;
+}
+
+.list1
+{
+    color: black;
+    position: absolute;
+    top: 200px;
+    width:880px;
+    left:18px;
+    font-size: 20px;
+    font-style:oblique;
+
+}
+
+
+.head5
+{
+    color: blue;
+    position: absolute;
+    top: 350px;
+    left:20px;
+    font-size: 25px;
+    font-style: oblique;
+}
+
+.img
+{
+    
+   position: absolute;
+   top:450px;
+   left:50px;
+   
+}
+
+.img1
+{
+    
+   position: absolute;
+   top:450px;
+   left:600px;
+   
+}
+.s1{
+
+    position: absolute;
+    top:800px;
+    left: -0.5em;
+
+}
+
+.s2{
+
+    position: absolute;
+    top:800px;
+    left: 550px;
+
+}
+
+
+.head6
+{
+    color: blue;
+    position: absolute;
+    top: 900px;
+    left:20px;
+    font-size: 25px;
+    font-style: oblique;
+}
+
+.list2
+{
+    color: black;
+    position: absolute;
+    top: 970px;
+    width:880px;
+    left:18px;
+    font-size: 20px;
+    font-style:oblique;
+
+}
+
+.h8
+{
+    position: absolute;
+    top: 70px;
+    left:0px;
+    width: 290%;
+
+}
